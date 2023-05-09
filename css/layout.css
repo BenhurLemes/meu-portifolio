@@ -46,13 +46,12 @@ aside nav li a.active{
 		left: 270px;
 	}
 
-	.about section .about-content .personal-info .info-item p span{
+	.about-content .row, .service section .row, .blog section .row, .service section .row{
 		display: block;
-		margin-left: 0;
 	}
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 	body{
 		font-size: 18px;
 	}
@@ -82,6 +81,7 @@ aside nav li a.active{
 		margin-left: 250px;
 	}
 
+	/* Sobre */
 	.row .about-text span{
 		display: block;
 	}
@@ -93,6 +93,25 @@ aside nav li a.active{
 	.about-content .row{
 		display: block;
 	}
+
+	/* Serviço e Blog */
+	.service section .container .row, .blog section .container .row{
+		margin-left: 250px;
+		width: 200%;
+		display: inline-block;
+	}
+
+	.row .about-text span{
+		display: block;
+	}
+
+	.row .about-text p{
+		width: 60%;
+	}
+
+	.service section .row, .blog section div.row{
+		width: 200%;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -100,9 +119,29 @@ aside nav li a.active{
 	font-size: 12px;
 	}
 
+	/* Lateral */
+	aside{
+		width: 200px;
+		background-color: #fdf9ff;
+		position: fixed;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: 10;
+		border-right: 1px solid #e8dfec;
+		padding: 30px;
+		display: block;
+	}
+
+	aside .logo img{
+		width: 165px;
+		height: 91px;
+		display: inline
+	}
+	
 	.home .intro img{
-		height: 150px;
-		width: 150px;
+		height: 200px;
+		width: 200px;
 	}
 	
 	.home h1{
@@ -115,9 +154,45 @@ aside nav li a.active{
 	}
 	
 	.home .intro .social-links a{
-		height: 25px;
-		width: 25px;
-		line-height: 25px;
+		height: 30px;
+		width: 30px;
+		line-height: 30px;
 		margin: 0 2px;
+	}
+
+	/*Borda das páginas*/
+	.main-content, .about section, .service section, .blog section{
+		margin-left: 175px;
+	}
+
+	/* Organização das páginas */
+	.about content .row, .service section .row, .service section .row, .blog section .row{
+		display: block;
+	}
+
+	/* Sobre organização */
+	.row .about-text span{
+		display: block;
+	}
+
+	.row .about-text p, .about-text h1{
+		width: 60%;
+	}
+
+	.skill-item h4{
+		padding-bottom: 19px;
+	}
+
+	.row .timeline-title{
+		width: 60%;
+	}
+
+	.about section .timeline-item .timeline-title{
+		font-size: 50%;
+	}
+
+	/* Serviços e Blog */
+	.service section .service .service-item .service-item-inner, .blog section .blog-item .blog-item-inner{
+		width: 200%;
 	}
 }
