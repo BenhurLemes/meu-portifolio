@@ -187,12 +187,16 @@ aside nav li a.active{
 		width: 60%;
 	}
 
-	.about section .timeline-item .timeline-title{
-		font-size: 50%;
+	/*Sobre, Serviços e Blog */
+	.service section .service .service-item .service-item-inner, .blog section .blog-item .blog-item-inner{
+		width: 100%;
 	}
 
-	/* Serviços e Blog */
-	.service section .service .service-item .service-item-inner, .blog section .blog-item .blog-item-inner{
-		width: 200%;
+	.about section .about-content .row{
+		width: 120%;
+	}
+
+	.about section .about-content .about-text h2, .about section .about-content .about-text p{
+		width: 50%;
 	}
 }
