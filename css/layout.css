@@ -23,180 +23,82 @@ aside nav li a.active{
   background-color: #1d1d1d;
 }
 
-/* Mobile First */
-
-/* Tablet */
-@media (max-width: 1199px){
-	.section .container{
-		padding-top: 70px;
+/* Desktop First*/
+@media screen and (min-width: 1001px){
+	aside{
+		background-color: orchid;
+	}
+	
+	section{
+		background-color: blue;
 	}
 
-	.aside{
-		left: -270px;
-	}
-	.aside.open{
-		left: 0px;
-	}
-
-	.section{
-		left: 0px;
-	}
-
-	.section.open{
-		left: 270px;
-	}
-
-	.about-content .row, .service section .row, .blog section .row, .service section .row{
-		display: block;
+	.row{
+		background-color: green;
 	}
 }
 
-@media (max-width: 768px) {
+
+/* Tablet First*/
+@media screen and (max-width: 1000px) and (min-width: 768px){
 	body{
 		font-size: 18px;
 	}
-	
-	/* Lateral */
+
+	/* Lateral FAZER*/
 	aside{
-		width: 270px;
-		background-color: #fdf9ff;
-		position: fixed;
-		height: 100%;
-		left: 0;
-		top: 0;
-		z-index: 10;
-		border-right: 1px solid #e8dfec;
-		padding: 50px;
-		display: block;
-	}
-	
-	aside .logo img{
-		width: 220px;
-		height: 91px;
-		display: inline
+		background-color: blue;
+		width: 100%;
+		padding: 10px;
+		position: relative;
 	}
 
-	/* index, sobre, serviços, blog*/
-	.main-content, .about section, .service section, .blog section{
-		margin-left: 250px;
+	aside .logo{
+		float: right;
 	}
 
-	/* Sobre */
-	.row .about-text span{
-		display: block;
+	aside nav li a{
+		font-size: 25px;
+		border: none;
 	}
 
-	.row .about-text p	{
-		width: 60%;
+	/* Conteúdo FEITO*/
+	.about section{
+		font-size: 15px;
 	}
 
-	.about-content .row{
-		display: block;
-	}
-
-	/* Serviço e Blog */
-	.service section .container .row, .blog section .container .row{
-		margin-left: 250px;
-		width: 200%;
-		display: inline-block;
-	}
-
-	.row .about-text span{
-		display: block;
-	}
-
-	.row .about-text p{
-		width: 60%;
-	}
-
-	.service section .row, .blog section div.row{
-		width: 200%;
+	.row{
+		position: relative;
 	}
 }
 
-@media only screen and (max-width: 480px) {
-	body {
-	font-size: 12px;
-	}
 
-	/* Lateral */
-	aside{
-		width: 200px;
-		background-color: #fdf9ff;
-		position: fixed;
-		height: 100%;
-		left: 0;
-		top: 0;
-		z-index: 10;
-		border-right: 1px solid #e8dfec;
-		padding: 30px;
-		display: block;
-	}
-
-	aside .logo img{
-		width: 165px;
-		height: 91px;
-		display: inline
-	}
-	
-	.home .intro img{
-		height: 200px;
-		width: 200px;
-	}
-	
-	.home h1{
-		font-size: 20px;
-	}
-	
-	.home .intro p{
+/* Mobile First */
+@media (max-width:414px){
+	body{
 		font-size: 12px;
-		line-height: 18px;
-	}
-	
-	.home .intro .social-links a{
-		height: 30px;
-		width: 30px;
-		line-height: 30px;
-		margin: 0 2px;
 	}
 
-	/*Borda das páginas*/
-	.main-content, .about section, .service section, .blog section{
-		margin-left: 175px;
-	}
-
-	/* Organização das páginas */
-	.about content .row, .service section .row, .service section .row, .blog section .row{
-		display: block;
-	}
-
-	/* Sobre organização */
-	.row .about-text span{
-		display: block;
-	}
-
-	.row .about-text p, .about-text h1{
-		width: 60%;
-	}
-
-	.skill-item h4{
-		padding-bottom: 19px;
-	}
-
-	.row .timeline-title{
-		width: 60%;
-	}
-
-	/*Sobre, Serviços e Blog */
-	.service section .service .service-item .service-item-inner, .blog section .blog-item .blog-item-inner{
+	/* Lateral FAZER*/
+	aside{
+		background-color: aqua;
 		width: 100%;
+		padding: 0;
+		position: relative;
 	}
 
-	.about section .about-content .row{
-		width: 120%;
+	aside nav li a{
+		font-size: 25px;
+		border: none;
 	}
 
-	.about section .about-content .about-text h2, .about section .about-content .about-text p{
-		width: 50%;
+	/* Conteúdo FAZER*/
+	section{
+		background-color: purple;
+		position: relative;
+	}
+
+	.row{
+		background-color: gold;
 	}
 }
