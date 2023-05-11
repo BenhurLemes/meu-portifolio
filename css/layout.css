@@ -23,46 +23,66 @@ aside nav li a.active{
   background-color: #1d1d1d;
 }
 
-/* Desktop First*/
-@media screen and (min-width: 1001px){
+/* Desktop First
+@media (min-width: 1001px){
+	
+	main{
+		display: flex;
+		justify-content: space-between;
+	}
+
 	aside{
 		background-color: orchid;
-	}
-	
-	section{
-		background-color: blue;
+		position: relative;
 	}
 
 	.row{
 		background-color: green;
 	}
 }
-
+*/
 
 /* Tablet First*/
-@media screen and (max-width: 1000px) and (min-width: 768px){
+@media (max-width: 1000px) and (min-width: 800px){
+	* {
+		padding: 0;
+		margin: 0;
+	}
+	
 	body{
 		font-size: 18px;
 	}
 
-	/* Lateral FAZER*/
 	aside{
-		background-color: blue;
-		width: 100%;
-		padding: 10px;
 		position: relative;
+		height: 120px;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	
+	.logo {
+		display: flex;
 	}
 
-	aside .logo{
-		float: right;
+	.logo a img{
+		max-width: 100%;
+		height: auto;
 	}
 
-	aside nav li a{
-		font-size: 25px;
+	nav, .nav-ul {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	aside nav ul li a{
+		font-size: 20px;
 		border: none;
+		margin: 10px;
 	}
 
-	/* Conteúdo FEITO*/
 	.about section{
 		font-size: 15px;
 	}
@@ -73,13 +93,18 @@ aside nav li a.active{
 }
 
 
-/* Mobile First */
-@media (max-width:414px){
+/* Mobile First
+@media (max-width:800px) and (min-width:375px){
+	* {
+		padding: 0;
+		margin: 0;
+	}
+	
 	body{
 		font-size: 12px;
 	}
 
-	/* Lateral FAZER*/
+	Lateral
 	aside{
 		background-color: aqua;
 		width: 100%;
@@ -92,7 +117,7 @@ aside nav li a.active{
 		border: none;
 	}
 
-	/* Conteúdo FAZER*/
+	Conteúdo
 	section{
 		background-color: purple;
 		position: relative;
@@ -102,3 +127,4 @@ aside nav li a.active{
 		background-color: gold;
 	}
 }
+*/
