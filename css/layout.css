@@ -1,4 +1,4 @@
-.section-title h1::before, .section-title h1::after, .btn {
+.section-title h2::before, .section-title h2::after, .btn {
     background-color: #1d1d1d;
 }
 
@@ -7,9 +7,15 @@ aside nav li a.active{
   color: #878787;
 }
 
+aside .nav-toggler span,
+aside .nav-toggler span::before, 
+aside .nav-toggler span::after{
+	background-color: #1d1d1d;
+}
+
 .blog .blog-item-inner .blog-info .blog-tags a,
 .service .service-item .service-item-inner .icon .fa,
-.about .about-content .about-text h2 span{
+.about .about-content .about-text h3 span{
     color: #989898;
 }
 
@@ -22,109 +28,3 @@ aside nav li a.active{
 .section-title h1::before, .section-title h1::after{
   background-color: #1d1d1d;
 }
-
-/* Desktop First
-@media (min-width: 1001px){
-	
-	main{
-		display: flex;
-		justify-content: space-between;
-	}
-
-	aside{
-		background-color: orchid;
-		position: relative;
-	}
-
-	.row{
-		background-color: green;
-	}
-}
-*/
-
-/* Tablet First*/
-@media (max-width: 1000px) and (min-width: 800px){
-	* {
-		padding: 0;
-		margin: 0;
-	}
-	
-	body{
-		font-size: 18px;
-	}
-
-	aside{
-		position: relative;
-		height: 120px;
-		width: 100%;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-	}
-	
-	.logo {
-		display: flex;
-	}
-
-	.logo a img{
-		max-width: 100%;
-		height: auto;
-	}
-
-	nav, .nav-ul {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-	}
-
-	aside nav ul li a{
-		font-size: 20px;
-		border: none;
-		margin: 10px;
-	}
-
-	.about section{
-		font-size: 15px;
-	}
-
-	.row{
-		position: relative;
-	}
-}
-
-
-/* Mobile First
-@media (max-width:800px) and (min-width:375px){
-	* {
-		padding: 0;
-		margin: 0;
-	}
-	
-	body{
-		font-size: 12px;
-	}
-
-	Lateral
-	aside{
-		background-color: aqua;
-		width: 100%;
-		padding: 0;
-		position: relative;
-	}
-
-	aside nav li a{
-		font-size: 25px;
-		border: none;
-	}
-
-	Conteúdo
-	section{
-		background-color: purple;
-		position: relative;
-	}
-
-	.row{
-		background-color: gold;
-	}
-}
-*/
